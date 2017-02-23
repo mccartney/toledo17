@@ -2,6 +2,9 @@ package toledo17
 package visitors
 
 import java.net.URL
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 import com.amazonaws.services.sqs.AmazonSQSClient
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
@@ -11,8 +14,9 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.remote.{DesiredCapabilities, RemoteWebDriver}
 import org.scalatest.Matchers
 import org.scalatest.concurrent.Eventually
-import org.scalatest.time.{Span, Seconds}
+import org.scalatest.time.{Seconds, Span}
 import org.scalatest.selenium.WebBrowser
+
 
 class BetssonVisitor extends WebBrowser with Eventually with Matchers {
   // https://www.betsson.com/en
@@ -35,14 +39,17 @@ class BetssonVisitor extends WebBrowser with Eventually with Matchers {
       val extractedBets = games map {
         game =>
           val teams = (game >> text("div.bets-data-title-game-title")).split(" - ").toList
-          val stakes = (game >> text("td.bet-group-1")).split(" ").toList
+          val stakes= (game >> text("td.bet-group-1")).split(" ").toList
 
-          val teamsComplete = teams match{
-            case List(one, two) => List(one, 'X', two)
+          val dateTime = LocalDateTime.parse(s"""${game >> text(".date")} ${game >> text(".time")}""",
+                           DateTimeFormatter.ofPattern("yy/MM/dd HH:mm")) 
+
+          val teamsComplete :List[String] = teams match{
+            case List(one, two) => List(one, "X", two)
             case other => other
           }
 
-          teamsComplete zip stakes
+          Model.Event(date=dateTime, teamsComplete zip stakes)
       }
       println(extractedBets)
       println(extractedBets.length)
