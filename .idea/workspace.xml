@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ea24cbe-6c52-4fe2-a839-37f5e42c241b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,19 +77,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Toledo17.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Toledo17.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding>
-                <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BetssonVisitor.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BetssonVisitor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
@@ -246,8 +241,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/Visitors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
       </list>
     </option>
   </component>
@@ -612,9 +607,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -912,20 +905,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

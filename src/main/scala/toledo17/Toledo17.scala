@@ -12,7 +12,6 @@ object Toledo17 extends App {
 }
 
 // TODO
-// - Betsson
 // - inny serwis, który czyta z SQS i wkłada do DynamoDB
 // - matchowanie/scalanie nazw drużyn (w DynamoDB?)
 // - prezentacja (Lift?)
