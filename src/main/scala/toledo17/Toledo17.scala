@@ -1,8 +1,12 @@
 package toledo17
 
+import toledo17.visitors._
+
+
 object Toledo17 extends App {
   println("T17")
   
+  new BetssonVisitor().visit
   new PinnacleVisitor().visit
   
 }

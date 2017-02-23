@@ -2,35 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ea24cbe-6c52-4fe2-a839-37f5e42c241b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudformation_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_core_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_dynamodb_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_kms_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_rds_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_s3_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_simpleworkflow_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_sns_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_sqs_1_11_32_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_julien_truffaut_monocle_core_2_11_1_2_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__com_github_julien_truffaut_monocle_macro_2_11_1_2_1_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_argonaut_argonaut_2_11_6_1a_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_aws_scala_aws_scala_core_2_11_7_0_6_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_aws_scala_aws_scala_sqs_2_11_7_0_6_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_kadai_config_2_11_5_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_kadai_core_2_11_5_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_kadai_logging_core_2_11_6_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_kadai_logging_json_2_11_6_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__io_atlassian_kadai_result_2_11_5_0_0_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_logging_log4j_log4j_api_2_5_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_apache_logging_log4j_log4j_core_2_5_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_concurrent_2_11_7_2_3_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_scalaz_scalaz_effect_2_11_7_2_3_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/SBT__org_typelevel_macro_compat_2_11_1_1_0_jar.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" afterPath="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -83,16 +58,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RetriedMessage.scala" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/io.atlassian.aws-scala/aws-scala-sqs_2.11/srcs/aws-scala-sqs_2.11-7.0.6-sources.jar!/io/atlassian/aws/sqs/RetriedMessage.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Marshaller.scala" pinned="false" current-in-tab="false">
         <entry file="jar://$USER_HOME$/.ivy2/cache/io.atlassian.aws-scala/aws-scala-sqs_2.11/srcs/aws-scala-sqs_2.11-7.0.6-sources.jar!/io/atlassian/aws/sqs/Marshaller.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,24 +70,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Toledo17.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
+      <file leaf-file-name="PinnacleVisitor.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Visitors.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala">
+      <file leaf-file-name="Toledo17.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
-                <element signature="e#18#37#0" expanded="true" />
+                <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BetssonVisitor.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,8 +108,30 @@
             <state relative-caret-position="294">
               <caret line="1296" column="29" lean-forward="false" selection-start-line="1296" selection-start-column="29" selection-end-line="1296" selection-end-column="29" />
               <folding>
-                <element signature="e#5216#5217#0" expanded="true" />
-                <element signature="e#5313#5314#0" expanded="true" />
+                <element signature="e#0#69245#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4478#4522#0" expanded="false" />
+                <element signature="e#6822#6823#0" expanded="false" />
+                <element signature="e#6885#6886#0" expanded="false" />
+                <element signature="e#16095#16116#0" expanded="false" />
+                <element signature="e#20756#20787#0" expanded="false" />
+                <element signature="e#24412#24448#0" expanded="false" />
+                <element signature="e#28276#28295#0" expanded="false" />
+                <element signature="e#31646#31667#0" expanded="false" />
+                <element signature="e#34874#34900#0" expanded="false" />
+                <element signature="e#37809#37828#0" expanded="false" />
+                <element signature="e#40144#40170#0" expanded="false" />
+                <element signature="e#42667#42686#0" expanded="false" />
+                <element signature="e#44965#44999#0" expanded="false" />
+                <element signature="e#46746#46764#0" expanded="false" />
+                <element signature="e#47092#47093#0" expanded="false" />
+                <element signature="e#47150#47151#0" expanded="false" />
+                <element signature="e#49536#49554#0" expanded="false" />
+                <element signature="e#54306#54328#0" expanded="false" />
+                <element signature="e#56214#56238#0" expanded="false" />
+                <element signature="e#59015#59034#0" expanded="false" />
+                <element signature="e#63329#63353#0" expanded="false" />
+                <element signature="e#65840#65866#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -145,7 +142,40 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
-              <folding />
+              <folding>
+                <element signature="e#0#32468#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4993#4994#0" expanded="false" />
+                <element signature="e#5040#5041#0" expanded="false" />
+                <element signature="e#9579#9580#0" expanded="false" />
+                <element signature="e#9653#9654#0" expanded="false" />
+                <element signature="e#15943#15944#0" expanded="false" />
+                <element signature="e#15976#15977#0" expanded="false" />
+                <element signature="e#17808#17838#0" expanded="false" />
+                <element signature="e#19011#19012#0" expanded="false" />
+                <element signature="e#19073#19074#0" expanded="false" />
+                <element signature="e#19195#19196#0" expanded="false" />
+                <element signature="e#19271#19272#0" expanded="false" />
+                <element signature="e#21560#21561#0" expanded="false" />
+                <element signature="e#21593#21594#0" expanded="false" />
+                <element signature="e#21775#21776#0" expanded="false" />
+                <element signature="e#21832#21833#0" expanded="false" />
+                <element signature="e#24173#24174#0" expanded="false" />
+                <element signature="e#24218#24219#0" expanded="false" />
+                <element signature="e#24475#24476#0" expanded="false" />
+                <element signature="e#24520#24521#0" expanded="false" />
+                <element signature="e#29261#29262#0" expanded="false" />
+                <element signature="e#29304#29305#0" expanded="false" />
+                <element signature="e#30280#30310#1" expanded="false" />
+                <element signature="e#30639#30669#1" expanded="false" />
+                <element signature="e#31089#31119#1" expanded="false" />
+                <element signature="e#31363#31364#0" expanded="false" />
+                <element signature="e#31402#31403#0" expanded="false" />
+                <element signature="e#32117#32118#0" expanded="false" />
+                <element signature="e#32144#32145#0" expanded="false" />
+                <element signature="e#32436#32437#0" expanded="false" />
+                <element signature="e#32464#32465#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +185,32 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1456">
               <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="29" />
-              <folding />
+              <folding>
+                <element signature="e#0#6350#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1377#1378#0" expanded="false" />
+                <element signature="e#1439#1440#0" expanded="false" />
+                <element signature="e#1618#1619#0" expanded="false" />
+                <element signature="e#1661#1662#0" expanded="false" />
+                <element signature="e#1834#1835#0" expanded="false" />
+                <element signature="e#1879#1880#0" expanded="false" />
+                <element signature="e#2057#2058#0" expanded="false" />
+                <element signature="e#2105#2106#0" expanded="false" />
+                <element signature="e#2475#2476#0" expanded="false" />
+                <element signature="e#2543#2544#0" expanded="false" />
+                <element signature="e#2927#2928#0" expanded="false" />
+                <element signature="e#2992#2993#0" expanded="false" />
+                <element signature="e#3388#3389#0" expanded="false" />
+                <element signature="e#3451#3452#0" expanded="false" />
+                <element signature="e#3845#3846#0" expanded="false" />
+                <element signature="e#3907#3908#0" expanded="false" />
+                <element signature="e#4069#4070#0" expanded="false" />
+                <element signature="e#4126#4127#0" expanded="false" />
+                <element signature="e#6224#6225#0" expanded="false" />
+                <element signature="e#6267#6268#0" expanded="false" />
+                <element signature="e#6313#6314#0" expanded="false" />
+                <element signature="e#6345#6346#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,19 +227,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQS.scala" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/io.atlassian.aws-scala/aws-scala-sqs_2.11/srcs/aws-scala-sqs_2.11-7.0.6-sources.jar!/io/atlassian/aws/sqs/SQS.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="1" selection-end-column="11" />
-              <folding>
-                <element signature="e#38#79#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,9 +242,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/Visitors.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala" />
       </list>
     </option>
   </component>
@@ -270,10 +323,6 @@
               <option name="myItemId" value="toledo17" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visitors.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -300,6 +349,10 @@
               <option name="myItemId" value="toledo17" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="visitors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -311,6 +364,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="toledo17.visitors" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -482,6 +540,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1ea24cbe-6c52-4fe2-a839-37f5e42c241b" name="Default" comment="" />
@@ -500,7 +561,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -551,17 +612,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="e#18#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,7 +759,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="332" column="30" lean-forward="false" selection-start-line="332" selection-start-column="30" selection-end-line="332" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#32468#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4993#4994#0" expanded="false" />
+            <element signature="e#5040#5041#0" expanded="false" />
+            <element signature="e#9579#9580#0" expanded="false" />
+            <element signature="e#9653#9654#0" expanded="false" />
+            <element signature="e#15943#15944#0" expanded="false" />
+            <element signature="e#15976#15977#0" expanded="false" />
+            <element signature="e#17808#17838#0" expanded="false" />
+            <element signature="e#19011#19012#0" expanded="false" />
+            <element signature="e#19073#19074#0" expanded="false" />
+            <element signature="e#19195#19196#0" expanded="false" />
+            <element signature="e#19271#19272#0" expanded="false" />
+            <element signature="e#21560#21561#0" expanded="false" />
+            <element signature="e#21593#21594#0" expanded="false" />
+            <element signature="e#21775#21776#0" expanded="false" />
+            <element signature="e#21832#21833#0" expanded="false" />
+            <element signature="e#24173#24174#0" expanded="false" />
+            <element signature="e#24218#24219#0" expanded="false" />
+            <element signature="e#24475#24476#0" expanded="false" />
+            <element signature="e#24520#24521#0" expanded="false" />
+            <element signature="e#29261#29262#0" expanded="false" />
+            <element signature="e#29304#29305#0" expanded="false" />
+            <element signature="e#30280#30310#1" expanded="false" />
+            <element signature="e#30639#30669#1" expanded="false" />
+            <element signature="e#31089#31119#1" expanded="false" />
+            <element signature="e#31363#31364#0" expanded="false" />
+            <element signature="e#31402#31403#0" expanded="false" />
+            <element signature="e#32117#32118#0" expanded="false" />
+            <element signature="e#32144#32145#0" expanded="false" />
+            <element signature="e#32436#32437#0" expanded="false" />
+            <element signature="e#32464#32465#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -706,7 +800,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1456">
           <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#0#6350#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1377#1378#0" expanded="false" />
+            <element signature="e#1439#1440#0" expanded="false" />
+            <element signature="e#1618#1619#0" expanded="false" />
+            <element signature="e#1661#1662#0" expanded="false" />
+            <element signature="e#1834#1835#0" expanded="false" />
+            <element signature="e#1879#1880#0" expanded="false" />
+            <element signature="e#2057#2058#0" expanded="false" />
+            <element signature="e#2105#2106#0" expanded="false" />
+            <element signature="e#2475#2476#0" expanded="false" />
+            <element signature="e#2543#2544#0" expanded="false" />
+            <element signature="e#2927#2928#0" expanded="false" />
+            <element signature="e#2992#2993#0" expanded="false" />
+            <element signature="e#3388#3389#0" expanded="false" />
+            <element signature="e#3451#3452#0" expanded="false" />
+            <element signature="e#3845#3846#0" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#4069#4070#0" expanded="false" />
+            <element signature="e#4126#4127#0" expanded="false" />
+            <element signature="e#6224#6225#0" expanded="false" />
+            <element signature="e#6267#6268#0" expanded="false" />
+            <element signature="e#6313#6314#0" expanded="false" />
+            <element signature="e#6345#6346#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -728,32 +847,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk-sqs/srcs/aws-java-sdk-sqs-1.11.46-sources.jar!/com/amazonaws/services/sqs/AmazonSQSClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="1296" column="29" lean-forward="false" selection-start-line="1296" selection-start-column="29" selection-end-line="1296" selection-end-column="29" />
           <folding>
-            <element signature="e#5216#5217#0" expanded="true" />
-            <element signature="e#5313#5314#0" expanded="true" />
+            <element signature="e#0#69245#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4478#4522#0" expanded="false" />
+            <element signature="e#6822#6823#0" expanded="false" />
+            <element signature="e#6885#6886#0" expanded="false" />
+            <element signature="e#16095#16116#0" expanded="false" />
+            <element signature="e#20756#20787#0" expanded="false" />
+            <element signature="e#24412#24448#0" expanded="false" />
+            <element signature="e#28276#28295#0" expanded="false" />
+            <element signature="e#31646#31667#0" expanded="false" />
+            <element signature="e#34874#34900#0" expanded="false" />
+            <element signature="e#37809#37828#0" expanded="false" />
+            <element signature="e#40144#40170#0" expanded="false" />
+            <element signature="e#42667#42686#0" expanded="false" />
+            <element signature="e#44965#44999#0" expanded="false" />
+            <element signature="e#46746#46764#0" expanded="false" />
+            <element signature="e#47092#47093#0" expanded="false" />
+            <element signature="e#47150#47151#0" expanded="false" />
+            <element signature="e#49536#49554#0" expanded="false" />
+            <element signature="e#54306#54328#0" expanded="false" />
+            <element signature="e#56214#56238#0" expanded="false" />
+            <element signature="e#59015#59034#0" expanded="false" />
+            <element signature="e#63329#63353#0" expanded="false" />
+            <element signature="e#65840#65866#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Visitors.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.7-sources.jar!/scala/package.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="56" column="6" lean-forward="false" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/PinnacleVisitor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/srcs/scalatest_2.11-3.0.1-sources.jar!/org/scalatest/concurrent/Eventually.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/Toledo17.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
-            <element signature="e#18#37#0" expanded="true" />
+            <marker date="1487873912856" expanded="true" signature="75:160" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/toledo17/visitors/BetssonVisitor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
