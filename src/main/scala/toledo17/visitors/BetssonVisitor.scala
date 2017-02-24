@@ -42,7 +42,7 @@ class BetssonVisitor extends WebBrowser with Eventually with Matchers {
           val stakes= (game >> text("td.bet-group-1")).split(" ").toList
 
           val dateTime = LocalDateTime.parse(s"""${game >> text(".date")} ${game >> text(".time")}""",
-                           DateTimeFormatter.ofPattern("yy/MM/dd HH:mm")) 
+                           DateTimeFormatter.ofPattern("dd/MM/yy HH:mm"))
 
           val teamsComplete :List[String] = teams match{
             case List(one, two) => List(one, "X", two)
