@@ -3,21 +3,19 @@ package visitors
 
 import java.time.LocalDateTime
 
-import com.amazonaws.services.sqs.AmazonSQSClient
-import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL._
+import net.ruippeixotog.scalascraper.model.Document
 import toledo17.Model.Event
 
-class PinnacleVisitor extends Visitor with Selenium {
+class PinnacleVisitor extends Visitor with Selenium with JSoupParser {
   // https://www.pinnacle.com
 
-  override def harvestEvents : Iterable[Event] = {
-    val pageSource = visitAPageAndWaitUntilItIsLoaded("https://www.pinnacle.com/en/odds/match/soccer/england/england-premier-league?sport=True")
+  override def extractHtmlWithEvents : String = {
+    return visitAPageAndWaitUntilItIsLoaded("https://www.pinnacle.com/en/odds/match/soccer/england/england-premier-league?sport=True")
+  }
 
-    val jsoup = JsoupBrowser()
-    val doc = jsoup.parseString(pageSource)
-
+  override def parse(doc:Document): Iterable[Event] = {
     val games = doc >> elementList("""div[ng-show="activeTab == 'period'"] table.odds-data tbody""")
     val extractedBets = games map {
       game =>
@@ -26,9 +24,7 @@ class PinnacleVisitor extends Visitor with Selenium {
         Model.Event(date = LocalDateTime.now, stakes = stakes)
     }
     return extractedBets
-
   }
-
 }
 
 

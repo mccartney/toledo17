@@ -4,22 +4,21 @@ package visitors
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-import com.amazonaws.services.sqs.AmazonSQSClient
-import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL._
+import net.ruippeixotog.scalascraper.model.Document
 import toledo17.Model.Event
 
 
-class BetssonVisitor extends Visitor with Selenium {
+class BetssonVisitor extends Visitor with Selenium with JSoupParser {
   // https://www.betsson.com/en
 
-  override def harvestEvents : Iterable[Event] = {
-    val pageSource = visitAPageAndWaitUntilItIsLoaded("https://sportsbook.betsson.com/en/football/england/fa-premier-league",
+  override def extractHtmlWithEvents : String = {
+    return visitAPageAndWaitUntilItIsLoaded("https://sportsbook.betsson.com/en/football/england/fa-premier-league",
       Some(className("bets-markets")))
+  }
 
-    val jsoup = JsoupBrowser()
-    val doc = jsoup.parseString(pageSource)
+  override def parse(doc : Document) : Iterable[Event] = {
     val games = doc >> elementList("table.bets-markets-listing-container tr.event-row")
     val extractedBets = games map {
       game =>

@@ -12,7 +12,6 @@ object Toledo17Visitors extends App {
 }
 
 // TODO
-// - zacząć budować strukturę obiektową w visitors/
 // - inny serwis, który czyta z SQS i wkłada do DynamoDB
 // - matchowanie/scalanie nazw drużyn (w DynamoDB?) ręczne
 // - matchowanie/scalanie nazw drużyn heurystyczne
