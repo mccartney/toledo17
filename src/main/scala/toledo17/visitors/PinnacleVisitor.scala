@@ -19,11 +19,16 @@ class PinnacleVisitor extends Visitor with Selenium with JSoupParser {
 
   override def parse(doc:Document): Iterable[Event] = {
     val games = doc >> elementList("""div[ng-show="activeTab == 'period'"] table.odds-data tbody""")
-    val extractedBets = games map {
+    val extractedBets = games flatMap {
       game =>
-        val stakes = (game >> texts("td.name")) zip (game >> texts("td.oddTip.game-moneyline"))
-        //TODO somehow challenge the Pinnacle's bug of not publishing the dates for events (without logging in)
-        Model.Event(date = LocalDateTime.now, stakes = stakes)
+        val teams  = (game >> texts("td.name")).toList
+        val stakes = (game >> texts("td.oddTip.game-moneyline")).toList
+        if (stakes.contains("") || stakes.contains("offline")) {
+          None
+        } else {
+          //TODO somehow challenge the Pinnacle's bug of not publishing the dates for events (without logging in)
+          Some(Model.Event(date = LocalDateTime.now, teams zip stakes))
+        }
     }
     return extractedBets
   }

@@ -21,7 +21,7 @@ class BetssonVisitor extends Visitor with Selenium with JSoupParser {
 
   override def parse(doc : Document) : Iterable[Event] = {
     val games = doc >> elementList("table.bets-markets-listing-container tr.event-row")
-    val extractedBets = games flatMap {
+    val extractedBets = games map {
       game =>
         val teams = (game >> text("div.bets-data-title-game-title")).split(" - ").toList
         val stakes = (game >> text("td.bet-group-1")).split(" ").toList
@@ -34,12 +34,7 @@ class BetssonVisitor extends Visitor with Selenium with JSoupParser {
           case List(one, two) if (stakes.length==3) => List(one, "X", two)
           case other => other
         }
-
-        if (stakes.contains("") || stakes.contains("offline")) {
-          None
-        } else {
-          Some(Model.Event(date = dateTime, teamsComplete zip stakes))
-        }
+        Model.Event(date = dateTime, teamsComplete zip stakes)
     }
     return extractedBets
   }
