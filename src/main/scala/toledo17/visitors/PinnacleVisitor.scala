@@ -12,7 +12,9 @@ class PinnacleVisitor extends Visitor with Selenium with JSoupParser {
   // https://www.pinnacle.com
 
   override def extractHtmlWithEvents : String = {
-    return visitAPageAndWaitUntilItIsLoaded("https://www.pinnacle.com/en/odds/match/soccer/england/england-premier-league?sport=True")
+    return visitAPageAndWaitUntilItIsLoaded(
+      "https://www.pinnacle.com/en/odds/match/basketball/usa/nba?sport=True")
+      // "https://www.pinnacle.com/en/odds/match/soccer/england/england-premier-league?sport=True")
   }
 
   override def parse(doc:Document): Iterable[Event] = {

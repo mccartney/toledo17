@@ -14,7 +14,8 @@ class BetssonVisitor extends Visitor with Selenium with JSoupParser {
   // https://www.betsson.com/en
 
   override def extractHtmlWithEvents : String = {
-    return visitAPageAndWaitUntilItIsLoaded("https://sportsbook.betsson.com/en/football/england/fa-premier-league",
+    return visitAPageAndWaitUntilItIsLoaded("https://sportsbook.betsson.com/en/basketball/nba/nba-regular-season",
+      //"https://sportsbook.betsson.com/en/football/england/fa-premier-league",
       Some(className("bets-markets")))
   }
 
@@ -30,7 +31,7 @@ class BetssonVisitor extends Visitor with Selenium with JSoupParser {
           DateTimeFormatter.ofPattern("dd/MM/yy HH:mm"))
 
         val teamsComplete: List[String] = teams match {
-          case List(one, two) => List(one, "X", two)
+          case List(one, two) if (stakes.length==3) => List(one, "X", two)
           case other => other
         }
 

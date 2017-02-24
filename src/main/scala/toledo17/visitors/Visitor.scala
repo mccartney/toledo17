@@ -17,6 +17,7 @@ trait Visitor {
   def emitToSQS(events:Iterable[Event]) = {
     val client: AmazonSQSClient = new AmazonSQSClient()
     events foreach { event =>
+      println("  Submitting "+event.toString)
       client.sendMessage("https://sqs.eu-west-1.amazonaws.com/214582020536/toledo17-sqs-1", event.toString)
     }
   }
