@@ -4,7 +4,7 @@ import toledo17.visitors._
 
 
 object Toledo17Visitors extends App {
-  println("T17")
+  println("!Toledo17 Visitors!")
   
   new BetssonVisitor().visit
   new PinnacleVisitor().visit
