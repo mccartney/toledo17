@@ -8,19 +8,19 @@ import com.amazonaws.services.sqs.AmazonSQSClient
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL._
+import toledo17.Model.Event
 
 
-class BetssonVisitor extends Selenium {
+class BetssonVisitor extends Visitor with Selenium {
   // https://www.betsson.com/en
 
-  def visit = {
+  override def harvestEvents : Iterable[Event] = {
     val pageSource = visitAPageAndWaitUntilItIsLoaded("https://sportsbook.betsson.com/en/football/england/fa-premier-league",
       Some(className("bets-markets")))
 
     val jsoup = JsoupBrowser()
     val doc = jsoup.parseString(pageSource)
     val games = doc >> elementList("table.bets-markets-listing-container tr.event-row")
-    println("Found " + games.length + " games")
     val extractedBets = games map {
       game =>
         val teams = (game >> text("div.bets-data-title-game-title")).split(" - ").toList
@@ -37,17 +37,9 @@ class BetssonVisitor extends Selenium {
 
         Model.Event(date = dateTime, teamsComplete zip stakes)
     }
-    println(extractedBets)
-    println(extractedBets.length)
-
-    extractedBets foreach { eb => emitToSQS(eb.toString) }
+    return extractedBets
   }
 
-  def emitToSQS(what: String) = {
-    val client: AmazonSQSClient = new AmazonSQSClient()
-
-    client.sendMessage("https://sqs.eu-west-1.amazonaws.com/214582020536/toledo17-sqs-1", what)
-  }
 
 }
 
