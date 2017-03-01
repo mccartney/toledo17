@@ -8,17 +8,19 @@ import java.nio.charset.StandardCharsets
 // and modified
 object Serializer {
 
+  val CHARSET_USED = StandardCharsets.UTF_8
+
   def serialize[T <: Serializable](obj: T): String = {
     val byteOut = new ByteArrayOutputStream()
     val objOut = new ObjectOutputStream(byteOut)
     objOut.writeObject(obj)
     objOut.close()
     byteOut.close()
-    Base64.getEncoder.encodeToString(byteOut.toByteArray)
+    new String(Base64.getEncoder.encode(byteOut.toByteArray()), CHARSET_USED)
   }
 
   def deserialize[T <: Serializable](string:String): T = {
-    val bytes = Base64.getDecoder.decode(string)
+    val bytes = Base64.getDecoder.decode(string.getBytes(CHARSET_USED))
     val byteIn = new ByteArrayInputStream(bytes)
     val objIn = new ObjectInputStream(byteIn)
     val obj = objIn.readObject().asInstanceOf[T]
