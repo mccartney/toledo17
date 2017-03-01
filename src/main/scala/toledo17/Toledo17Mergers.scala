@@ -2,6 +2,8 @@ package toledo17
 
 import com.amazonaws.services.sqs.AmazonSQSClient
 import com.amazonaws.services.sqs.model.Message
+import toledo17.Model.Event
+
 import scala.collection.JavaConverters._
 
 object Toledo17Mergers extends App {
@@ -14,7 +16,11 @@ object Toledo17Mergers extends App {
   messages foreach {
     msg:Message =>
       try {
-        println(msg.getBody)
+        val body = msg.getBody
+        println(body)
+        val event = Serializer.deserialize[Event](body)
+        println("Event= "+event)
+
       } finally {
         client.deleteMessage(Infrastructure.SQS_FROM_VISITORS_TO_MERGERS, msg.getReceiptHandle)
       }

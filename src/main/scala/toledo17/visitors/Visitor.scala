@@ -1,4 +1,5 @@
-package toledo17.visitors
+package toledo17
+package visitors
 
 import com.amazonaws.services.sqs.AmazonSQSClient
 import toledo17.Infrastructure
@@ -19,8 +20,9 @@ trait Visitor {
     val client: AmazonSQSClient = new AmazonSQSClient()
     events foreach { event =>
       println("  Submitting "+event.toString)
+      val serialized = Serializer.serialize[Event](event)
       //TODO consider using sendMessageBatch
-      client.sendMessage(Infrastructure.SQS_FROM_VISITORS_TO_MERGERS, event.toString)
+      client.sendMessage(Infrastructure.SQS_FROM_VISITORS_TO_MERGERS, serialized)
     }
   }
 }

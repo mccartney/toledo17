@@ -13,4 +13,5 @@ lazy val root = (project in file(".")).
     libraryDependencies += "org.seleniumhq.selenium" % "selenium-java" % "2.35.0",
     libraryDependencies += "net.ruippeixotog" %% "scala-scraper" % "1.2.0",
     libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.11.46"
+
   )
