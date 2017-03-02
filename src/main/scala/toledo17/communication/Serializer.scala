@@ -6,7 +6,7 @@ import java.util.Base64
 
 // Taken from http://stackoverflow.com/a/34492194/118587
 // and modified
-object Serializer {
+private[communication] object Serializer {
 
   val CHARSET_USED = StandardCharsets.UTF_8
 

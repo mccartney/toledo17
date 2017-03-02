@@ -1,6 +1,6 @@
 package toledo17.communication
 
-object Infrastructure {
+private[communication] object Infrastructure {
 
   //TODO it should rather be a dynamically created queue based on some hashcode(Model.Event.class)
   // so that whenever the definition of the Event case class changes, a new queue is created.
