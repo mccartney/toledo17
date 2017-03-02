@@ -3,6 +3,7 @@ package toledo17
 import com.amazonaws.services.sqs.AmazonSQSClient
 import com.amazonaws.services.sqs.model.Message
 import toledo17.Model.Event
+import toledo17.communication.{Infrastructure, Serializer}
 
 import scala.collection.JavaConverters._
 

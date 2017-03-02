@@ -1,8 +1,8 @@
-package toledo17
+package toledo17.communication
 
 import java.io._
-import java.util.Base64
 import java.nio.charset.StandardCharsets
+import java.util.Base64
 
 // Taken from http://stackoverflow.com/a/34492194/118587
 // and modified

@@ -2,8 +2,8 @@ package toledo17
 package visitors
 
 import com.amazonaws.services.sqs.AmazonSQSClient
-import toledo17.Infrastructure
 import toledo17.Model.Event
+import toledo17.communication.{Infrastructure, Serializer}
 
 trait Visitor {
 

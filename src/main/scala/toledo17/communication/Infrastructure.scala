@@ -1,4 +1,4 @@
-package toledo17
+package toledo17.communication
 
 object Infrastructure {
 
