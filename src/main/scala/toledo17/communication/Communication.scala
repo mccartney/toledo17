@@ -29,7 +29,6 @@ class Communication[Payload <: Serializable] {
       msg:Message =>
         try {
           val body = msg.getBody
-          println(body)
           val item = Serializer.deserialize[Payload](body)
           action(item)
         } finally {
