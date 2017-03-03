@@ -18,9 +18,13 @@ object Toledo17Mergers extends App {
       println(cartesianProduct(Seq(event.date.toLocalDate.toString), teamVariantsForEvent:_*))
   }
 
-  def variantsOfTeams(team: String): Iterable[String] = team.split(" ") map {
-    _.replaceAll("-", "")
-  } filter (_.length > 3)
+  def variantsOfTeams(team: String): Iterable[String] = {
+    val subvariants : Iterable[String] = team.split(" ") map {
+      _.replaceAll("-", "")
+    } filter (_.length > 3)
+
+    Seq(team) ++ subvariants.toSeq
+  }
 
   def cartesianProduct(one:Iterable[String], rest:Iterable[String]*) :List[String] =
     // http://stackoverflow.com/questions/15502924/passing-a-individual-arguments-and-a-seq-to-a-var-arg-function#comment21950813_15502924
