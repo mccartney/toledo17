@@ -14,7 +14,7 @@ object Toledo17Mergers extends App {
     event =>
       println("Event= "+event)
       val teamNames = event.stakes.unzip._1
-      val teamVariantsForEvent:Seq[Iterable[String]] = (teamNames map {variantsOfTeams(_)}).toSeq
+      val teamVariantsForEvent:Seq[Iterable[String]] = (teamNames map variantsOfTeams).toSeq
       println(cartesianProduct(Seq(event.date.toLocalDate.toString), teamVariantsForEvent:_*))
   }
 
